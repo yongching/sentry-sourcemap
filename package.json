@@ -12,7 +12,8 @@
     "react": "16.8.3",
     "react-dom": "16.6.1",
     "react-hot-loader": "4.8.0",
-    "react-native": "0.59.0"
+    "react-native": "0.59.0",
+    "react-native-sentry": "0.43.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
