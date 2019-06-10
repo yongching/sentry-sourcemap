@@ -9,9 +9,10 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 
-import { Sentry } from "react-native-sentry";
+import { Sentry, SentryLog } from "react-native-sentry";
 
 Sentry.config("https://...@sentry.io/...", {
+  logLevel: SentryLog.Debug,
   environment: "dev"
 }).install();
 
@@ -25,7 +26,7 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
-    throw new Error("Awesome!");
+    throw new Error("FromAwesomeProject!");
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
